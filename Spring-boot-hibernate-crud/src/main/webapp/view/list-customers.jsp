@@ -39,11 +39,11 @@
                     <th>Action</th>
                 </tr>
                 <c:forEach var="item" items="${customers}">
-                    <c:url var="updateLink" value="/customer/showFormForUpdate">
+                    <c:url var="updateLink" value="/showFormForUpdate">
                         <c:param name="customerId" value="${item.id}"/>
                     </c:url>
 
-                    <c:url var="deleteLink" value="/customer/delete">
+                    <c:url var="deleteLink" value="/delete">
                         <c:param name="customerId" value="${item.id}"/>
                     </c:url>
 
